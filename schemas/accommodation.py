@@ -9,6 +9,3 @@ class AccommodationSchema(BaseModel):
     Type: str = Field(default="unknown")
     AvgNightPriceUSD: str = Field(default="unknown", alias="Avg Night Price (USD)")
     
-    class Config:
-        anystr_strip_whitespace = True
-        allow_population_by_field_name = True

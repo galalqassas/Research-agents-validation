@@ -10,6 +10,3 @@ class DishSchema(BaseModel):
     AvgPriceUSD: str = Field(default="unknown", alias="Avg Price (USD)")
     BestFor: str = Field(default="unknown", alias="Best For")
     
-    class Config:
-        anystr_strip_whitespace = True
-        allow_population_by_field_name = True

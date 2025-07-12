@@ -13,7 +13,3 @@ class TransportSchema(BaseModel):
     PriceRangeInUSD: str = Field(default="unknown", alias="Price Range in USD")
     CostDetailsAndOptions: str = Field(default="unknown", alias="Cost Details and Options")
     AdditionalInfo: str = Field(default="unknown")
-    
-    class Config:
-        anystr_strip_whitespace = True
-        allow_population_by_field_name = True

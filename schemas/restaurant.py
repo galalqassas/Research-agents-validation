@@ -12,7 +12,3 @@ class RestaurantSchema(BaseModel):
     AvgPricePerPersonUSD: str = Field(default="unknown", alias="Avg Price per Person (USD)")
     BudgetRange: str = Field(default="unknown", alias="Budget Range")
     Suitability: str = Field(default="unknown")
-    
-    class Config:
-        anystr_strip_whitespace = True
-        allow_population_by_field_name = True
